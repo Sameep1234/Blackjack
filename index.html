@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <title>Blackjack Game</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Blackjack Game</h2>
+        <h3><span id="resultSpan">Let's Play!</span></h3>
+        <div class="d-flex justify-content-around" id="firstRow">
+            <div id="yourBox">
+                <h3>YOU: <span id="yourScoreSpan">0</span></h3>
+            </div>
+            <div id="dealerBox">
+                <h3>DEALER: <span id="dealerScoreSpan">0</span>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center" id="secondRow">
+            <button type="button" class="btn btn-lg btn-primary ml-2 mt-2 mb-2"><span id="buttonHit">Hit</span></button>
+            <button type="button" class="btn btn-lg btn-warning ml-2 mt-2 mb-2"><span id="buttonStand">Stand</span></button>
+            <button type="button" class="btn btn-lg btn-danger ml-2 mt-2 mb-2"><span id="buttonStand">Deal</span></button>
+        </div>
+
+        <div class="d-flex justify-content-center" id="thirdRow">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Loses</th>
+                    <th>Draws</th>
+                </tr>
+
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="loses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+    <script src="static/js/jquery.slim.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+</body>
+</html>
