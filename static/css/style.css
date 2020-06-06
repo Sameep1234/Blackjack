@@ -20,3 +20,8 @@
     padding: 5px;
     border: 1px solid black;
 }
+
+#yourBox img, #dealerBox img{
+    width: 25%;
+    padding: 10px;
+}
