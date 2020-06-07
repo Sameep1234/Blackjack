@@ -56,7 +56,6 @@ function blackjackHit() {
         scoreUpdate(card, YOU);
         printScore(YOU);
     }
-    
 }
 
 function randomCard(){
@@ -73,7 +72,7 @@ function showCard(card, activePlayer){
 
 function scoreUpdate(card, activePlayer){
     if(card === 'A'){
-        if(activePlayer['score'] +blackjackVariables['cardsScore'][card][1] <= 21){
+        if(activePlayer['score'] + blackjackVariables['cardsScore'][card][1] <= 21){
             activePlayer['score'] += blackjackVariables['cardsScore'][card][1];
         }else{
             activePlayer['score'] += blackjackVariables['cardsScore'][card][0];
